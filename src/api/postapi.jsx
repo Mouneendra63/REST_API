@@ -27,5 +27,13 @@ export const postData=(post)=>
     return api.post('/posts',post);
 }
 
+// Put is used to update the entire data 
+// patch is updating short data
+
+export const updateData=(id,data)=>
+{
+    return api.patch(`/posts/${id}`,data);
+}
+
 
 
